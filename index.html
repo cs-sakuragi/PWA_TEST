@@ -1,12 +1,11 @@
 <head>
+    <link rel="javascript" href="./service-worker.js">
     <script>
-        // この記述を追記
         if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-                 .register('/service-worker.js') // ここはservice-worker.jsのパスを指定
+                 .register('/service-worker.js')
                  .then(function() { console.log('Service Worker Registered'); });
         }
-        // この記述を追記　ここまで
     </script>
     
     <div>PWA_TEST</div>
